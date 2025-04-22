@@ -7,26 +7,27 @@ This project aims to analyze and predict drug modifications caused by micro- and
 ## Project Overview
 
 Micro-nanoparticles can significantly influence drug stability, release, and bioavailability. This project presents predictive models to:
-
-*Detect potential drug modifications
-*Understand nanoparticle-drug interaction patterns
-*Support nanoformulation design using data-driven insights
+* Detect potential drug modifications
+* Understand nanoparticle-drug interaction patterns
+* Support nanoformulation design using data-driven insights
 
 ## Models Implemented
-###1. LLM (Few-Shot Learning)
+
+### 1. LLM (Few-Shot Learning)
 Used for prompt-based prediction and understanding patterns in low-resource settings.
 
-###2. XGBoost
-*Gradient boosting technique for structured tabular data
-*Used for classification and regression of drug modification effects
-*See XGBoost.ipynb for implementation
+### 2. XGBoost
+* Gradient boosting technique for structured tabular data
+* Used for classification and regression of drug modification effects
+* See XGBoost.ipynb for implementation
 
-###3. GraphSAGE
-*Applied to model nanoparticle-drug relationships as graphs
-*Captures structural dependencies in data
+### 3. GraphSAGE
+* Applied to model nanoparticle-drug relationships as graphs
+* Captures structural dependencies in data
 
-##Repository Structure
+## Repository Structure
 
+```
 .
 ├── XGboost.ipynb           # XGBoost model notebook
 ├── GraphSAGE/              # Directory for GraphSAGE implementation
@@ -35,9 +36,9 @@ Used for prompt-based prediction and understanding patterns in low-resource sett
 ├── utils/                  # Helper functions
 ├── README.md               # Project documentation
 └── requirements.txt        # Dependencies
+```
+
 ## Results
-*XGBoost achieved high accuracy in classifying modification likelihood.
-*Few-shot learning showed potential in generalizing from limited examples.
-*GraphSAGE captured complex relational structures with nanoparticle interaction data.
-
-
+* XGBoost achieved high accuracy in classifying modification likelihood.
+* Few-shot learning showed potential in generalizing from limited examples.
+* GraphSAGE captured complex relational structures with nanoparticle interaction data.
